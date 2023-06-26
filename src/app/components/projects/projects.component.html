@@ -1,0 +1,24 @@
+<section class="projects" id="projects">
+<h5>Projects I have</h5>
+<h2>Worked on</h2>
+<div class="container projects__container">
+    <article class="project" *ngFor="let project of projects">
+        <div class="project__head" >
+            <h3>{{project.name}}</h3>
+        </div>
+        <ul class="project__list" *ngFor="let desc of project.description">
+            <li>
+                <p>{{desc}}</p>
+            </li>
+        </ul>
+        <ul class="tools__link">
+            <li class="tools">
+                <svg class="list__icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                <p>{{project.tools}}</p> 
+            </li>
+        <a class="link" *ngIf="project.link" [href]="project.link" target="_blank">Source Code</a>
+        <li></li>
+        </ul>
+    </article>
+</div>
+</section>
