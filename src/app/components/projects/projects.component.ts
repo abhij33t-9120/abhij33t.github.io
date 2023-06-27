@@ -37,11 +37,10 @@ export class ProjectsComponent {
       description:[
         'Standalone project of my portfolio using Angular.',
         'A simple yet dynamically ajusted for responsiveness in tablet and mobile devices.',
-        'Depicted usages of various directives like ngIf, ngFor',
-        'Depicted static Validation of forms in Angular',
-        'Use of complex components like modals'
+        'Depicted usages of various directives like ngIf, ngFor.'
       ],
-      tools: 'Angular, Node, EmailJs'
+      tools: 'Angular, Node, EmailJs',
+      link: 'https://abhij33t-9120.github.io/abhij33t.github.io/'
     }
   ]
 }
